@@ -13,7 +13,25 @@
     font-size: 17px;
     line-height: 1.8;
 }
+   /* 表題の調整 */
+.main-title {
+    font-size: 2.8rem;   /* 大きく */
+    margin-bottom: 15px;
+}
 
+.catch {
+    font-size: 1.4rem;   /* 少し小さく */
+    margin-bottom: 20px;
+    color: #5a4a42;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: bold;   /* 太字 */
+    color: #4a4a4a;
+    margin-bottom: 8px;
+}
+  
 header {
     background: #f2e9d8;
     padding: 40px 20px;
@@ -116,7 +134,19 @@ footer {
 
 /* スマホ用 */
 @media screen and (max-width: 600px) {
+.main-title {
+        font-size: 2.2rem;
+    }
 
+    .catch {
+        font-size: 1.2rem;
+    }
+
+    .lead {
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
     body {
         font-size: 19px;
         line-height: 1.9;
@@ -163,13 +193,14 @@ footer {
 </head>
 
 <body>
-
 <header>
-    <h1>みんなの食堂</h1>
-    <h1>おいしい食事と、ほっとできる居場所を。</h1>
-    <p>みんなの食堂は、地域の誰もが安心して集まれる場所です。</p>
-    <p> カゴメみらいやさい財団の助成を受けて運営しています。</p>
+    <h1 class="main-title">みんなの食堂</h1>
+    <p class="catch">おいしい食事と、ほっとできる居場所を。</p>
+
+    <p class="lead"><strong>みんなの食堂は、地域の誰もが安心して集まれる場所です。</strong></p>
+    <p class="lead"><strong>カゴメみらいやさい財団の助成を受けて運営しています。</strong></p>
 </header>
+
 
 <section>
     <h2>みんなの食堂とは？</h2>
