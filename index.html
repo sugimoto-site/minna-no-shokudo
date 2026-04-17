@@ -4,76 +4,82 @@
 <meta charset="UTF-8">
 <title>みんなの食堂</title>
 <style>
-    body {
-        font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
-        background: #faf7f0;
-        color: #333;
-        margin: 0;
-        padding: 0;
-        line-height: 1.8;
-         font-size: 17px;
-        line-height: 1.8;
+  body {
+    font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+    background: #faf7f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    line-height: 1.8;
 }
 
+header {
+    background: #f2e9d8;
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 3px solid #e5d8c0;
+}
 
-    }
-    header {
-        background: #f2e9d8;
-        padding: 40px 20px;
-        text-align: center;
-        border-bottom: 3px solid #e5d8c0;
-    }
-    header h1 {
-        font-size: 2.2rem;
-        margin-bottom: 10px;
-        color: #5a4a42;
-    }
-    header p {
-        font-size: 1.1rem;
-        color: #6b5e55;
-    }
-    section {
-        max-width: 900px;
-        margin: 40px auto;
-        padding: 0 20px;
-    }
-    h2 {
-        border-left: 8px solid #8bbf8a;
-        padding-left: 10px;
-        color: #4a5a4a;
-        margin-bottom: 20px;
-    }
-    .card {
-        background: #ffffff;
-        border-radius: 12px;
-        padding: 20px;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        margin-bottom: 30px;
-    }
-    .menu-illust {
-        display: flex;
-        gap: 15px;
-        margin-top: 15px;
-    }
-    .menu-illust img {
-        width: 80px;
-        height: 80px;
-        object-fit: contain;
-    }
-    .voice {
-        background: #fffdf7;
-        border-left: 6px solid #e8d9b5;
-        padding: 15px;
-        margin-bottom: 15px;
-    }
-    footer {
-        text-align: center;
-        padding: 30px;
-        color: #777;
-        font-size: 0.9rem;
-    }
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: #5a4a42;
+}
 
-  .event-block.soft {
+header p {
+    font-size: 1.1rem;
+    color: #6b5e55;
+}
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    border-left: 8px solid #8bbf8a;
+    padding-left: 10px;
+    color: #4a5a4a;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.menu-illust {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.menu-illust img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.voice {
+    background: #fffdf7;
+    border-left: 6px solid #e8d9b5;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.event-block.soft {
     background: #fffdf8;
     border-radius: 18px;
     padding: 25px;
@@ -108,28 +114,22 @@
     font-family: "Hiragino Maru Gothic ProN", sans-serif;
 }
 
-.menu-illust img {
-    width: 75px;
-    height: 75px;
-    margin-right: 12px;
-} 
- @media screen and (max-width: 600px) {
+/* スマホ用 */
+@media screen and (max-width: 600px) {
+
     body {
         font-size: 19px;
         line-height: 1.9;
     }
-       header {
-        text-align: center;
-    }
-
-    header p {
-        text-align: center;
-        font-size: 1.2rem;
-        line-height: 1.8;
-    }
 
     header h1 {
         font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        line-height: 1.8;
+        text-align: center;
     }
 
     h2 {
@@ -143,7 +143,6 @@
     li {
         font-size: 19px;
     }
-}
 
     .menu-illust {
         flex-wrap: wrap;
@@ -158,6 +157,7 @@
     section {
         padding: 0 16px;
     }
+} 
 }
 </style>
 </head>
